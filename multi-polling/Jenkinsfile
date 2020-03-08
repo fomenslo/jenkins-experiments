@@ -1,6 +1,6 @@
 node {
     
-    properties([pipelineTriggers([pollSCM('2 * * * *')])])
+    properties([pipelineTriggers([pollSCM('*/2 * * * *')])])
     dir ('test1') {
 		git 'https://github.com/fomenslo/jenkins-test1.git'
     }
