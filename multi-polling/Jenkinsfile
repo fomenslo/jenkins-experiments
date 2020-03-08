@@ -1,6 +1,6 @@
 node {
     
-    properties([pipelineTriggers([pollSCM('5 * * * *')])])
+    properties([pipelineTriggers([pollSCM('7 * * * *')])])
     
     ansiColor('xterm') {
         // Just some echoes to show the ANSI color.
