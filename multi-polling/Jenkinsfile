@@ -1,6 +1,8 @@
 node {
     
-    properties([pipelineTriggers([pollSCM('7 * * * *')])])
+    properties([pipelineTriggers([pollSCM('2 * * * *')])])
+    git 'https://github.com/fomenslo/jenkins-test1.git'
+    git 'https://github.com/fomenslo/jenkins-test2.git'
     
     ansiColor('xterm') {
         // Just some echoes to show the ANSI color.
